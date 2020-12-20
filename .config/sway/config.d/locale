@@ -1,0 +1,6 @@
+input * {
+	xkb_layout "de"
+#	xkb_variant ""
+#	xkb_options ""
+#	xkb_model ""
+}

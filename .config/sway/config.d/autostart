@@ -1,0 +1,14 @@
+# Default autostart
+
+# Start policy kit
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Start notification service
+exec mako
+
+# Start eyesaver
+exec wlsunset
+
+# Start Wayland overlay bar
+exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob
+

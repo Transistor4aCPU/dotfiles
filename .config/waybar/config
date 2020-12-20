@@ -1,0 +1,90 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "cpu", "pulseaudio", "battery", "custom/powermenu"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "sway/mode": {
+        "tooltip": false
+    },
+    "sway/workspaces": {
+        "all-outputs": true,
+        "persistent_workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": []
+        }
+    },
+
+    "cpu": {
+        "format": "{usage}% CPU"
+    },
+    "custom/menu": {
+        "format": "🐧",
+        "tooltip": false,
+	"on-click": "/usr/bin/wofi -S drun -b -G"
+    },
+    "tray": {
+        "spacing": 5,
+        "icon-size": 14,
+        "tooltip": false
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% {icon}  ",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": [" ", " ", " ", " ", " ", " ", " ", " "],
+        "tooltip": false,
+        "on-click": "lxtask"
+    },
+    "clock": {
+        "format": "{:%a, %d %b %H:%M}",
+        "tooltip": false,
+        "on-click": "alacritty -e calcurse"
+    },
+    "pulseaudio": {
+        //"scroll-step": 1,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "🔈",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["🔉", "🔊"]
+        },
+        "tooltip": false,
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) 📡",
+        "format-ethernet": "Wired: {ifname} ",
+        "format-disconnected": "Disconnected ⚠",
+        "tooltip": false,
+        "on-click": "alacritty -e nmtui"
+    },
+    "custom/powermenu": {
+        "on-click": "",
+        "format": "🔌",
+        "tooltip": false
+    }
+}

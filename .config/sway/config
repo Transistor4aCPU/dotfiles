@@ -26,7 +26,7 @@ set $right l
 set $term alacritty
 
 # Your preferred application launcher
-set $menu wofi -S drun -b -G
+set $menu wofi -S drun -b -O alphabetical -i 
 
 # Your preferred editor
 set $editor gedit

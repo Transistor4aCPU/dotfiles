@@ -12,3 +12,5 @@ exec wlsunset
 # Start Wayland overlay bar
 exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob
 
+# Start audio
+exec sleep 1 && mpv ~/.config/sway/sounds/allsystemsalive.wav

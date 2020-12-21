@@ -26,7 +26,7 @@ set $right l
 set $term alacritty
 
 # Your preferred application launcher
-set $menu wofi -S drun -I -D image_size=16 -b -O alphabetical -i
+set $menu wofi -S drun -I -D image_size=16 -b -O alphabetical -i -p "Start an application..."
 
 # Your preferred editor
 set $editor gedit

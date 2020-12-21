@@ -4,5 +4,5 @@ sudo pacman -S sway swaybg swayidle swaylock waybar mako alacritty wofi playerct
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git; cd yay; makepkg -si
 yay -S wlsunset wob
-# yay -S gfeeds sddm-theme-redrock
+# yay -S gfeeds
 exit

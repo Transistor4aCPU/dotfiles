@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "tray", "pulseaudio", "battery", "custom/powermenu"],
+    "modules-right": ["cpu", "tray", "custom/updates", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
         "max-length": 50
     },
@@ -86,5 +86,11 @@
         "on-click": "~/.config/wofi/scripts/powermenu.sh",
         "format": "🔌",
         "tooltip": false
+    },
+    "custom/updates": {
+	"exec": "~/.config/waybar/scripts/updates.sh",
+	"interval": "once",
+	"format": "{}📦",
+	"on-click": "alacritty -e 'pkexec pacman -Syu'"
     }
 }

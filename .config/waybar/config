@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "cpu", "pulseaudio", "battery", "custom/powermenu"],
+    "modules-right": ["cpu", "tray", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
         "max-length": 50
     },
@@ -83,7 +83,7 @@
         "on-click": "alacritty -e nmtui"
     },
     "custom/powermenu": {
-        "on-click": "",
+        "on-click": "~/.config/wofi/scripts/powermenu.sh",
         "format": "🔌",
         "tooltip": false
     }

@@ -172,4 +172,4 @@ bindsym $mod+r mode "resize"
         bindsym $mod+Shift+r reload
 
         # Exit sway (logs you out of your Wayland session)
-        # bindsym $mod+Shift+e exec
+        bindsym $mod+Shift+e exec ~/.config/wofi/scripts/powermenu.sh

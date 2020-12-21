@@ -32,7 +32,7 @@
     "custom/menu": {
         "format": "🐧",
         "tooltip": false,
-	"on-click": "/usr/bin/wofi -S drun -b -G"
+	"on-click": "/usr/bin/wofi -S drun -I -D image_size=16 -b -O alphabetical -i"
     },
     "tray": {
         "spacing": 5,

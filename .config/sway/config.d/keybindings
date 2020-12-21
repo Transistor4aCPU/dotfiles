@@ -12,6 +12,9 @@ bindsym --locked XF86AudioPrev exec playerctl previous
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%- && expr $(brightnessctl g) / 15 $SWAYSOCK.wob 
 bindsym XF86MonBrightnessUp exec brightnessctl s +5% && expr $(brightnessctl g) / 15 $SWAYSOCK.wob
 
+# Windowswitcher
+bindsym $mod+Shift+w exec ~/.config/wofi/scripts/windows.py
+
 # Start application launcher
 bindsym $mod+d exec $menu
 
@@ -34,21 +37,16 @@ bindsym $actl+n exec $news
 # Basics:
 #
 
-    # Kill focused window
-    bindsym $mod+Shift+q kill
+	# Kill focused window
+	bindsym $mod+Shift+q kill
 
-    # Drag floating windows by holding down $mod and left mouse button.
-    # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
-    floating_modifier $mod normal
+	# Drag floating windows by holding down $mod and left mouse button.
+	# Resize them with right mouse button + $mod.
+	# Despite the name, also works for non-floating windows.
+	# Change normal to inverse to use left mouse button for resizing and right
+	# mouse button for dragging.
+	floating_modifier $mod normal
 
-    # Reload the configuration file
-    bindsym $mod+Shift+r reload
-
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec
 #
 # Moving around:
 #
@@ -73,9 +71,6 @@ bindsym $actl+n exec $news
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
-
-# Select window
-    bindsym $mod+Shift+w exec ~/.config/wofi/scripts/windows.py
 
 #
 # Workspaces:
@@ -165,3 +160,13 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+#
+# Sway keybindings
+#
+
+        # Reload the configuration file
+        bindsym $mod+Shift+r reload
+
+        # Exit sway (logs you out of your Wayland session)
+        # bindsym $mod+Shift+e exec

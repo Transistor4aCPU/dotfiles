@@ -13,7 +13,10 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 5%- && expr $(brightnessctl g
 bindsym XF86MonBrightnessUp exec brightnessctl s +5% && expr $(brightnessctl g) / 15 $SWAYSOCK.wob
 
 # Windowswitcher
-bindsym $mod+Shift+w exec ~/.config/wofi/scripts/windows.py
+bindsym $mod+Shift+w exec ~/.config/wofi/scripts/windowswitcher/windows.py
+
+# Websearch
+bindsym $mod+Shift+s exec ~/.config/wofi/scripts/web-search.sh
 
 # Start application launcher
 bindsym $mod+d exec $menu

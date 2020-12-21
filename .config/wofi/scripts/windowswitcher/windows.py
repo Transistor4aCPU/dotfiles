@@ -51,7 +51,7 @@ def parse_windows(ws_windows):
 
 # Executes wofi with the given input string
 def show_wofi(windows):
-    command = "wofi -p \"Windows: \" -d -i -m -k /dev/null --hide-scroll"
+    command = "wofi -p \"Windows: \" -d -i -m -k /dev/null --hide-scroll -L 10"
     process = subprocess.Popen(command, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
 
     return process.communicate(input=windows)[0]

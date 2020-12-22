@@ -91,6 +91,6 @@
 	"exec": "~/.config/waybar/scripts/updates.sh",
 	"interval": "once",
 	"format": "{}📦",
-	"on-click": "alacritty -e 'pkexec pacman -Syu'"
+	"on-click": "alacritty -e sudo pacman -Syu"
     }
 }

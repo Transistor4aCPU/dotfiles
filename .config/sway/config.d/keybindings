@@ -18,6 +18,9 @@ bindsym $mod+Shift+w exec ~/.config/wofi/scripts/windowswitcher/windows.py
 # Websearch
 bindsym $mod+Shift+s exec ~/.config/wofi/scripts/web-search.sh
 
+# Simple todo manager
+bindsym $mod+Shift+t exec ~/.config/wofi/scripts/todo.sh
+
 # Start application launcher
 bindsym $mod+d exec $menu
 

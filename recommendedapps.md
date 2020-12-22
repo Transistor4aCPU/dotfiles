@@ -14,11 +14,11 @@
 firefox
 
 # Feed/News reader
-[Not snappy] gfeeds
+gfeeds
 
 # Photo manager
-#gnome-photos
-#[minimal] eog
+gnome-photos
+[minimal] eog
 
 # Weather
 gnome-weather
@@ -37,13 +37,15 @@ gnome-passwordsafe
 libreoffice-fresh
 onlyoffice
 
-# Media clients
-
 # Music
-lollypop
+#lollypop
+celluloid	
+mpv
 
 # Videos
 totem
+mpv
+celluloid
 
 # File manager
 nautilus
@@ -55,15 +57,13 @@ gnome-contacts
 #[Not snappy] gnome-calendar
 
 # PDF viewer
-#evince
 firefox
 
 # Todo list
 [minimal] Built-in wofi todo list (Meta+Shift+t)
-#gtg
 
 # Notes
-#gnome-notes
+#[Bad workflow]gnome-notes
 gedit
 
 # Texteditor
@@ -85,9 +85,6 @@ deja-dup
 # Disks
 gnome-disk-utility
 
-# Document manager
-#[Usefull?] gnome-documents
-
 ### Chat client
 # Matrix client
-Fractal
+fractal

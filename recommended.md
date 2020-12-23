@@ -2,6 +2,14 @@
 ### Not recommended yet!
 ### I try to exchange some gnome apps with better ones
 
+# Display manager
+sddm
+gdm
+
+# Qt compability
+qt5-wayland
+qt6-wayland
+
 ### Requirements
 * Native wayland support
 * Snappy
@@ -38,8 +46,7 @@ libreoffice-fresh
 onlyoffice
 
 # Music
-#lollypop
-celluloid	
+celluloid
 mpv
 
 # Videos
@@ -48,6 +55,7 @@ mpv
 celluloid
 
 # File manager
+pcmanfm-gtk3
 nautilus
 
 # Contacts

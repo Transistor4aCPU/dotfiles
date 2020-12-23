@@ -22,7 +22,7 @@ bindsym $mod+Shift+s exec ~/.config/wofi/scripts/web-search.sh
 bindsym $mod+Shift+t exec ~/.config/wofi/scripts/todo.sh
 
 # Simple screenshot
-bindsym $actl+Shift+s exec ~/.config/wofi/scripts/screenshot.sh
+bindsym Print exec ~/.config/wofi/scripts/screenshot.sh
 
 # Start application launcher
 bindsym $mod+d exec $menu

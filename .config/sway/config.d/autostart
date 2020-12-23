@@ -14,3 +14,9 @@ exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob
 
 # Start audio
 exec sleep 1 && mpv ~/.config/sway/sounds/allsystemsalive.wav
+
+# Start local autostart files
+exec dex ~/.config/autostart/*
+
+# Start global autostart files
+exec dex /etc/xdg/autostart/*

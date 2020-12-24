@@ -95,6 +95,8 @@
     },
     "custom/weather": {
 	"exec": "~/.config/waybar/scripts/weather.sh",
-	"interval": 1800
+	"interval": 1800,
+	"on-click": "xdg-open 'https://wttr.in/'"	
     }
 }
+

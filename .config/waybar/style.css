@@ -77,6 +77,18 @@ window#waybar {
     border-radius: 0px;
 }
 
+#custom-weather {
+    background: rgba(94,129,172, 0.7);
+    margin-left: 0px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 0px;
+}
+
 #cpu {
     background: rgba(94,129,172, 0.7);
     margin-left: 0px;

@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "tray", "custom/updates", "pulseaudio", "battery", "custom/powermenu"],
+    "modules-right": ["cpu", "tray", "custom/weather", "custom/updates", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
         "max-length": 50
     },
@@ -92,5 +92,9 @@
 	"interval": "once",
 	"format": "{}📦",
 	"on-click": "alacritty -e sudo pacman -Syu"
+    },
+    "custom/weather": {
+	"exec": "~/.config/waybar/scripts/weather.sh",
+	"interval": 1800
     }
 }

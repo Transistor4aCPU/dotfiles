@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=alacritty -e macho
-Icon=Alacritty
-Terminal=false
-Categories=System;
-Name=Manual pages
-GenericName=Help
-Comment=A list of linux manual

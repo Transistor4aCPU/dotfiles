@@ -3,3 +3,4 @@ QT_WAYLAND_FORCE_DPI=physical
 SDL_VIDEODRIVER=wayland
 ECORE_EVAS_ENGINE=wayland_egl
 ELM_ENGINE=wayland_egl
+#LANGUAGE=

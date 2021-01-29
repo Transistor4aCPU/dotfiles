@@ -16,14 +16,23 @@ bindsym --locked XF86AudioPrev exec playerctl previous
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%- && expr $(brightnessctl g) / 15 $SWAYSOCK.wob 
 bindsym XF86MonBrightnessUp exec brightnessctl s +5% && expr $(brightnessctl g) / 15 $SWAYSOCK.wob
 
-# Windowswitcher
-bindsym $mod+Shift+w exec ~/.config/wofi/scripts/windowswitcher/windows.py
+# Window switcher
+bindsym $sctl+w exec ~/.config/wofi/scripts/windowswitcher/windows.py
+bindsym Mod1+Tab exec ~/.config/wofi/scripts/windowswitcher/windows.py
+
+# Workspace switcher
+bindsym $sctl+Shift+w exec ~/.config/sway/scripts/workspaceswitcher.sh
+bindsym Mod1+Shift+Tab exec ~/.config/sway/scripts/workspaceswitcher.sh
+
+# Translator
+bindsym $sctl+t exec ~/.config/wofi/scripts/translatorsysen.sh
+bindsym $sctl+Shift+t exec ~/.config/wofi/scripts/translatorensys.sh
 
 # Websearch
-bindsym $mod+Shift+s exec ~/.config/wofi/scripts/web-search.sh
+bindsym $sctl+s exec ~/.config/wofi/scripts/web-search.sh
 
 # Simple todo manager
-bindsym $mod+Shift+t exec ~/.config/wofi/scripts/todo.sh
+bindsym $sctl+t exec ~/.config/wofi/scripts/todo.sh
 
 # Simple screenshot
 bindsym Print exec ~/.config/wofi/scripts/screenshot.sh
@@ -45,6 +54,10 @@ bindsym $actl+m exec $mail
 
 # Start news client
 bindsym $actl+n exec $news
+
+
+### Swaywm default config
+
 
 #
 # Basics:

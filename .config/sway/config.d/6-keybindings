@@ -31,10 +31,10 @@ bindsym $sctl+Shift+t exec ~/.config/wofi/scripts/translatorensys.sh
 # Websearch
 bindsym $sctl+s exec ~/.config/wofi/scripts/web-search.sh
 
-# Simple todo manager
-bindsym $sctl+t exec ~/.config/wofi/scripts/todo.sh
+# Todo manager
+bindsym $actl+Shift+t exec ~/.config/wofi/scripts/todo.sh
 
-# Simple screenshot
+# Screenshot
 bindsym Print exec ~/.config/wofi/scripts/screenshot.sh
 
 # Start application launcher

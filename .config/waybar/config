@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "height": 24,
-    "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
+    "modules-left": ["custom/menu", "sway/workspaces", "sway/mode", "wlr/taskbar"],
     "modules-center": ["clock"],
     "modules-right": ["cpu", "tray", "custom/weather", "custom/updates", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
@@ -25,7 +25,14 @@
         "9": []
         }
     },
-
+    "wlr/taskbar": {
+	"format": "{icon}",
+	"icon-theme": "Arc-Dark",
+	"icon-size": 16,
+	"on-click": "activate",
+	"on-middle-click": "close",
+	"on-right-click": "minimize"
+    },
     "cpu": {
         "format": "{usage}% CPU"
     },

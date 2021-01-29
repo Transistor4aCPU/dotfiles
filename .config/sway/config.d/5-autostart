@@ -1,0 +1,26 @@
+# 5-autostart
+
+# Start policy kit
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+# exec lxpolkit
+
+# Start notification service
+exec mako
+
+# Start eyesaver
+exec wlsunset
+
+# Start Wayland overlay bar
+exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob
+
+# Start audio
+exec sleep 2 && mpv ~/.config/sway/sounds/allsystemsalive.wav
+
+# Start local autostart files
+exec dex ~/.config/autostart/*
+
+# Start global autostart files
+exec dex /etc/xdg/autostart/*
+
+# Enable autotiling
+exec autotiling

@@ -1,0 +1,45 @@
+### 2-variables
+# Config by Transistor4aCPU
+
+
+# Window control key
+set $mod Mod4
+
+# Application control key
+set $actl Mod1
+
+# Custom script control key
+set $sctl Menu
+
+
+### Application variables
+
+
+# Your preferred terminal emulator
+set $term alacritty
+
+# Your preferred application launcher
+set $menu wofi -S drun -I -D image_size=16 -b -O alphabetical -i -p "Start an application..."
+
+# Your preferred editor
+set $editor gedit
+
+# Your preferred password manager
+set $passwd gnome-passwordsafe
+
+# Your preferred mail client
+set $mail evolution
+
+# Your preferred news client
+set $news gfeeds
+
+
+
+### swaywm defaults
+
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l

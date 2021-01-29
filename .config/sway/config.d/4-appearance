@@ -1,0 +1,33 @@
+### 4-apearance
+# Config by Transistor4aCPU
+
+
+# Set font
+font pango:Roboto-Thin 11
+
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+output * bg ~/.config/sway/backgrounds/sea.jpg fill
+
+#
+# Window borders
+#
+default_border none
+
+#
+# Status Bar:
+#
+bar {
+        swaybar_command waybar
+        position top
+        gaps 6
+        height 6
+        status_padding 6
+        strip_workspace_name yes
+    }
+}
+
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+	gsettings set $gnome-schema gtk-theme 'Arc-Dark'
+	gsettings set $gnome-schema icon-theme 'Arc'
+}

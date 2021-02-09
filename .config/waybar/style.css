@@ -1,0 +1,205 @@
+* {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border: none;
+    border-radius: 0;
+    font-family: "Roboto-Thin";
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces {
+    margin-left: 2px;
+}
+
+#workspaces button {
+    margin-right: 2px;
+    padding-bottom: 2px;
+    padding-right: 1px;
+    padding-left: 1px;
+    background: rgba(75, 81, 98, 1.0);
+    color: white;
+    transition-duration: 0;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+#workspaces button.focused {
+    background-color: rgba(82, 148, 226, 1.0);
+    color: white;
+    font-weight: bold;
+    transition-duration: 0;
+}
+
+#workspaces button.persistent {
+    background: rgba(70, 72, 83, 1.0);
+    font-weight: normal;
+    transition-duration: 0;
+}
+
+#mode {
+    background-color: rgba(75, 81, 98, 1.0);
+    margin-left: 2px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+#tray {
+    background: rgba(75, 81, 98, 1.0);
+    margin-left: 0px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 0px;
+}
+
+#custom-updates {
+    background: rgba(75, 81, 98, 1.0);
+    margin-left: 0px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 0px;
+}
+
+#custom-weather {
+    background: rgba(75, 81, 98, 1.0);
+    margin-left: 0px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 0px;
+}
+
+#cpu {
+    background: rgba(75, 81, 98, 1.0);
+    margin-left: 0px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 4px;
+    padding-right: 6px;
+}
+
+#pulseaudio {
+    background: rgba(75, 81, 98, 1.0);
+    margin-left: 0px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+}
+
+#custom-clock {
+    background: rgba(75, 81, 98, 1.0);
+    margin-left: 3px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+}
+
+#network {
+    background: rgba(75, 81, 98, 1.0);
+    margin-left: 3px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+    border-radius: 0px;
+}
+
+#custom-menu {
+    background: rgba(82, 148, 226, 1.0);
+    margin-left: 2px;
+    color: white;
+    margin-right: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+#battery {
+    background: rgba(46, 179, 152, 1.0);
+    margin-left: 0px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+    border-radius: 0px;
+}
+
+#battery.charging {
+    padding-right: 4px;
+}
+
+#custom-powermenu {
+    background: rgba(238, 73, 52, 1.0);
+    color: white;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+}
+
+#custom-leftradius {
+        border-radius:8px;
+        background: rgba(75, 81, 98, 1.0);
+	margin-right: -5px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+        padding-right: 1px;
+        padding-left: 4px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+}
+
+#custom-rightradius {
+        border-radius:8px;
+        background: rgba(75, 81, 98, 1.0);
+	margin-left:-5px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-right: 1px;
+	padding-left: 4px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+}
+
+#taskbar button {
+	background: rgba(75, 81, 98, 1.0);
+	padding-right: 1px;
+	padding-left: 4px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+#taskbar button.active {
+	background: rgba(82, 148, 226, 1.0);
+}

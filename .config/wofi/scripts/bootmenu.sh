@@ -18,6 +18,7 @@ OPTIONS=$(efibootmgr | sed '1,/BootOrder:/d' | while read BLINE; do NUM=$(echo "
 case $chosen in
     One-time-boot) onetimeboot ;;
     Enable-boot-option) enableboot ;;
+    Disable-boot-option) disableboot ;;
     List-boot-options) listoptions ;;
 esac
 exit
